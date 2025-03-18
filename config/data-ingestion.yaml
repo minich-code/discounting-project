@@ -1,0 +1,11 @@
+
+artifacts_root: artifacts
+
+data_ingestion: 
+  root_dir: artifacts/data_ingestion
+  database_name: Discounting
+  collection_name: hotel_discounts
+  batch_size: 20000
+
+
+
