@@ -1,0 +1,29 @@
+
+
+
+artifacts_root: artifacts
+
+data_transformation:
+  root_dir: artifacts/data_transformation
+  data_path: artifacts/data_validation/hotel_val_data.parquet
+  random_state: 42
+  target_col: 'is_canceled'
+  numerical_cols:
+    - lead_time                    : int64  
+    - booking_changes              : int64  
+    - adr                          : float64
+    - required_car_parking_spaces  : int64  
+    - total_of_special_requests    : int64  
+    - total_booking_days           : int64  
+    - total_guests                 : float64
+
+  categorical_cols:
+    - hotel                        : object
+    - meal                         : object 
+    - market_segment               : object 
+    - distribution_channel         : object 
+    - reserved_room_type           : object 
+    - assigned_room_type           : object 
+    - deposit_type                 : object 
+    - customer_type                : object 
+    - reservation_status           : object 
